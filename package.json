@@ -6,6 +6,7 @@
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "repository": "https://github.com/Enterwell/react-form-builder",
+  "private": false,
   "author": {
     "name": "Enterwell",
     "email": "services@enterwell.net",
