@@ -1,5 +1,5 @@
 {
-  "name": "react-form-builder",
+  "name": "@enterwell/react-form-builder",
   "version": "0.1.0",
   "description": "Form builder functionality for React",
   "main": "./lib/cjs/index.js",
