@@ -5,10 +5,10 @@ import Head from 'next/head';
 import { CacheProvider } from '@emotion/react';
 import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
+import { FormBuilderProvider } from 'react-form-builder';
 import UserInformation from '../components/UserInformation/UserInformation';
 import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
 import createEmotionCache from '../config/createEmotionCache';
-import { FormBuilderProvider } from 'react-form-builder';
 import formComponents from '../components/formBuilderComponents';
 
 // Use dark mode hook import

@@ -1,9 +1,9 @@
 // General imports
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { observer } from 'mobx-react-lite';
 
 // Components import
-import { FormBuilder, useFormBuilder, useFormField } from 'react-form-builder';
+import { FormBuilder, useFormField } from 'react-form-builder';
 import { isNonEmptyString, resetFields } from '@enterwell/react-form-validation';
 
 // App models import
@@ -32,7 +32,7 @@ function UserInformation(props) {
   } = appModel;
 
   const form = {
-    userName: useFormField('', isNonEmptyString, 'string', 'Name'),
+    userName: useFormField('', isNonEmptyString, 'string', 'Name')
   };
 
   useEffect(() => {
