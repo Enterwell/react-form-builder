@@ -1,4 +1,6 @@
-<h1 align="center">Enterwell's React form builder</h1>
+<h1 align="center">
+    @Enterwell</br>React Form Builder
+</h1>
 
 <p align="center">
     Simplifies form rendering. Doesn't mess with your components. Simple and straight to the point.
