@@ -1,11 +1,5 @@
 <h1 align="center">
-    <table align="center" border="0">
-        <tr>
-            <td rowspan="3"><img src="./docs/logo.svg" width="60" height="60" /></td>
-        </tr>
-        <tr><td>@Enterwell</td></tr>
-        <tr><td>React Form Builder</td></tr>
-    </table>
+    @Enterwell</br>React Form Builder
 </h1>
 
 <p align="center">
