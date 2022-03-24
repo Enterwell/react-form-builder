@@ -10,6 +10,12 @@
 /cypress/screenshots
 /cypress/videos
 
+# storybook
+/storybook-static
+
+# storycap
+/.stories-pending
+
 # production
 /lib
 

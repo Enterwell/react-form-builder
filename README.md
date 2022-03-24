@@ -120,6 +120,18 @@ import { FormBuilderField } from '@enterwell/react-form-builder';
 </FormBuilder>
 ```
 
+#### Override components
+
+You can nest `FormBuilderProvider` inside other provider. The bottom provider will take all components from its parent and override matching with newly provided component types.
+
+```js
+<FormBuilderProvider components={formComponentsA}>
+    <FormBuilderProvider components={formComponentsB}>
+        <!-- Can use both types from A and B, if B contains same type as A, B type is resolved here -->
+    </FormBuilderProvider>
+</FormBuilderProvider>
+```
+
 ## Development
 
 For development:
