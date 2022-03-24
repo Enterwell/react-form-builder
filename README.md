@@ -1,4 +1,7 @@
-<h1 align="center">Enterwell's React form builder</h1>
+<h1 style="display:flex; align-items: center; justify-content: center">
+    <img src="./docs/logo.svg" width="60" height="60" style="float: left;" />
+    <span style="margin-left: 24px">@Enterwell</br>React Form Builder</span>
+</h1>
 
 <p align="center">
     Simplifies form rendering. Doesn't mess with your components. Simple and straight to the point.
