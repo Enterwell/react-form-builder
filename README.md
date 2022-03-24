@@ -9,7 +9,7 @@
 <div align="center">
 
 [![npm version](https://img.shields.io/npm/v/@enterwell/react-form-builder)](https://www.npmjs.com/package/@enterwell/react-form-builder)
-![Build](https://github.com/Enterwell/react-form-builder/workflows/Node.js%20Package/badge.svg?branch=master)
+[![Build and publish](https://github.com/Enterwell/react-form-builder/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/Enterwell/react-form-builder/actions/workflows/npm-publish.yml)
 
 </div>
 
