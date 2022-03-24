@@ -27,7 +27,10 @@ export default [
             resolve(),
             commonjs(),
             typescript({ tsconfig: './tsconfig.json' }),
-            // terser()
+            terser({
+                keep_fnames: true,
+                keep_classnames: true
+            })
         ],
         external: ['react', 'react-dom', '@enterwell/react-form-validation']
     }
