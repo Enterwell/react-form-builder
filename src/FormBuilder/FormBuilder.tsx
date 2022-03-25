@@ -4,15 +4,7 @@ import FormBuilderContext from "./FormBuilderContext";
 import { submitForm } from '@enterwell/react-form-validation';
 import { FormBuilderProviderContext } from "../FormBuilderProvider/FormBuilderProviderContext";
 import { FormBuilderProps } from "./FormBuilder.types";
-
-function UndefinedField({ fieldName }: { fieldName: string }) {
-    return <div style={{
-        color: '#FF8080',
-        padding: '12px',
-        backgroundColor: '#290000',
-        borderRadius: 8
-    }}>{`Undefined form field "${fieldName}"`}</div>
-}
+import InvalidPlaceholder from "./InvalidPlaceholder";
 
 export default function FormBuilder(props: FormBuilderProps) {
     const {
@@ -42,7 +34,7 @@ export default function FormBuilder(props: FormBuilderProps) {
                     }
                     return (
                         <FieldWrapper key={fieldName}>
-                            <UndefinedField fieldName={fieldName} />
+                            <InvalidPlaceholder fieldName={`empty field ${fieldName}`} />
                         </FieldWrapper>
                     );
                 })}
