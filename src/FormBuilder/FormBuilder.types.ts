@@ -4,7 +4,7 @@ import { FormField } from "../index.types";
 export interface FormBuilderProps {
     children?: React.ReactNode | undefined;
     form: FormItems;
-    onSubmit: (formData: object) => void;
+    onSubmit?: (formData: object) => void;
 }
 
 export interface FormItems {

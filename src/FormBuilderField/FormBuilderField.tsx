@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import FormBuilderContext from "../FormBuilder/FormBuilderContext";
+import InvalidPlaceholder from "../FormBuilder/InvalidPlaceholder";
 import { FormBuilderProviderContext } from "../FormBuilderProvider/FormBuilderProviderContext";
 import { FormField } from "../index.types";
 
@@ -21,6 +22,9 @@ export default function FormBuilderField(props: FormBuilderFieldsProps) {
     const context = useContext(FormBuilderProviderContext);
     const formContext = useContext(FormBuilderContext);
     const Component = context.components[type];
+
+    if (!Component)
+        return <InvalidPlaceholder fieldName={`component type ${type}`} />
 
     return (
         <Component
