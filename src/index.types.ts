@@ -1,7 +1,7 @@
 export interface FormValidation {
-    value?: any | undefined,
+    value?: any,
     error: boolean,
-    errorMessages?: string[] | undefined,
+    errorMessages?: string[],
     onChange: (value: any) => void,
     onBlur: () => void,
     validate: (value: any) => boolean | Promise<boolean>
@@ -9,5 +9,5 @@ export interface FormValidation {
 
 export interface FormField extends FormValidation {
     type: string,
-    label?: string | undefined
+    label?: string
 }

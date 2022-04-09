@@ -5,8 +5,8 @@ const useFormField = (
     initialValue: any | undefined, 
     validationFn: (value: any) => Promise<boolean> | boolean, 
     type: string, 
-    label?: string | undefined,
-    config?: object | undefined) => {
+    label?: string,
+    config?: object) => {
     const validation = useValidation(initialValue, validationFn, config) as FormValidation;
 
     return {
