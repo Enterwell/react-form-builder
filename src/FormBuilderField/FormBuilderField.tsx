@@ -16,7 +16,8 @@ export default function FormBuilderField(props: FormBuilderFieldsProps) {
         errorMessages,
         type,
         label,
-        onChange
+        onChange,
+        onBlur
     } = field;
 
     const context = useContext(FormBuilderProviderContext);
@@ -33,6 +34,7 @@ export default function FormBuilderField(props: FormBuilderFieldsProps) {
             error={error}
             helperText={error && errorMessages ? errorMessages.join('. ') : undefined}
             onChange={(e) => onChange && onChange(e)}
+            onBlur={() => onBlur && onBlur()}
             onKeyPress={(e) => { if (e.key === 'Enter' && formContext) formContext.submit(); }} />
     );
 }

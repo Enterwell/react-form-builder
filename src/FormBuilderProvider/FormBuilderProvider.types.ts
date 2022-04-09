@@ -4,13 +4,16 @@ type FunctionComponent<Props> = (props: Props) => JSX.Element;
 type ClassComponent<Props> = new (props: Props) => JSX.ElementClass;
 type Component<Props> = FunctionComponent<Props> | ClassComponent<Props>;
 
+export type EventTargetValue = { target: { value: any; name: string } };
+
 export type FormBuilderComponent = Component<{ 
-    value?: any | undefined, 
-    label?: string | undefined,
-    error?: boolean | undefined,
-    helperText?: string | undefined,
-    onChange?: React.ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement> | undefined,
-    onKeyPress?: React.KeyboardEventHandler<HTMLDivElement> | undefined
+    value?: any, 
+    label?: string,
+    error?: boolean,
+    helperText?: string,
+    onBlur?: () => void,
+    onChange?: (eventOrValue: EventTargetValue | any) => void,
+    onKeyPress?: React.KeyboardEventHandler<HTMLDivElement>
 }>;
 
 export type FormBuilderComponents = {
@@ -21,6 +24,6 @@ export type FormBuilderComponents = {
 }
 
 export interface FormBuilderProviderProps {
-    children?: React.ReactNode | undefined, 
+    children?: React.ReactNode, 
     components: FormBuilderComponents
 }
