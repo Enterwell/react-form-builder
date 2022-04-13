@@ -1636,18 +1636,18 @@
     ts-dedent "^2.0.0"
 
 "@storybook/addon-interactions@^6.4.19":
-  version "6.4.19"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-6.4.19.tgz#d39374b748e6a154e7ffff8b56db0bd88454035e"
-  integrity sha512-oKXxRkKL2deUI7nOLm9UvihtPaTQ2p8Y5gL2CQvJgHhTpKmUxW+e26GYNlcFUOjsx2ifXyzqNEscsZUP83BCUw==
+  version "6.4.21"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-6.4.21.tgz#e3c8686db024cea1956148317d4ad4d78fa98f1e"
+  integrity sha512-RPlsF5K17ftK57vT6A0SIXmwivBC/T3ZXI9yp4YjxrPUm5ZyBqvGipgZBri2ivLRTcKtIzEb81evNb9cGsm6pQ==
   dependencies:
-    "@storybook/addons" "6.4.19"
-    "@storybook/api" "6.4.19"
-    "@storybook/components" "6.4.19"
-    "@storybook/core-common" "6.4.19"
-    "@storybook/core-events" "6.4.19"
+    "@storybook/addons" "6.4.21"
+    "@storybook/api" "6.4.21"
+    "@storybook/components" "6.4.21"
+    "@storybook/core-common" "6.4.21"
+    "@storybook/core-events" "6.4.21"
     "@storybook/csf" "0.0.2--canary.87bc651.0"
-    "@storybook/instrumenter" "6.4.19"
-    "@storybook/theming" "6.4.19"
+    "@storybook/instrumenter" "6.4.21"
+    "@storybook/theming" "6.4.21"
     global "^4.4.0"
     jest-mock "^27.0.6"
     polished "^4.0.5"
@@ -2367,14 +2367,14 @@
   dependencies:
     lodash "^4.17.15"
 
-"@storybook/instrumenter@6.4.19", "@storybook/instrumenter@^6.4.0 || >=6.5.0-0":
-  version "6.4.19"
-  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-6.4.19.tgz#1586624d0315713c20f3d7b4e2c7fc595730b934"
-  integrity sha512-KwOJUW7tItZw1CLffUbaSfEzH1p1HdGmJs1Q42uWGJSbXbVHZ7i7bJWYb3Lf90+yHTlqQjTr1PKAymwDwHseTA==
+"@storybook/instrumenter@6.4.21", "@storybook/instrumenter@^6.4.0 || >=6.5.0-0":
+  version "6.4.21"
+  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-6.4.21.tgz#b8b5dc182321de5610f9b5fe0397a627175802d0"
+  integrity sha512-9SVzjVWRzSWf3wudxjxIbhH5Yq6P2hGtlYSYQhLZrPLWQDLcH5RITRakDLWFtpWwjz/T8YJUuNf7pf6WGqQdkA==
   dependencies:
-    "@storybook/addons" "6.4.19"
-    "@storybook/client-logger" "6.4.19"
-    "@storybook/core-events" "6.4.19"
+    "@storybook/addons" "6.4.21"
+    "@storybook/client-logger" "6.4.21"
+    "@storybook/core-events" "6.4.21"
     global "^4.4.0"
 
 "@storybook/manager-webpack4@6.4.19":
