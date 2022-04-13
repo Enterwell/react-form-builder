@@ -1,11 +1,13 @@
-export interface FormField {
-    // react-form-validation fields
-    value?: any | undefined,
+export interface FormValidation {
+    value?: any,
     error: boolean,
-    errorMessages?: string[] | undefined,
+    errorMessages?: string[],
     onChange: (value: any) => void,
+    onBlur: () => void,
+    validate: (value: any) => boolean | Promise<boolean>
+}
 
-    // react-form-builder
+export interface FormField extends FormValidation {
     type: string,
-    label?: string | undefined
+    label?: string
 }
