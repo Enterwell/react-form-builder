@@ -12,9 +12,9 @@ export type FormBuilderComponent = Component<{
     label?: string,
     error?: boolean,
     helperText?: string,
-    onBlur?: (config?: FieldConfig) => void,
-    onChange?: (eventOrValue: EventTargetValue | any, config?: FieldConfig) => void,
-    onKeyPress?: React.KeyboardEventHandler<HTMLDivElement>
+    onBlur: (config?: FieldConfig) => void,
+    onChange: (eventOrValue: EventTargetValue | any, config?: FieldConfig) => void,
+    onKeyPress: React.KeyboardEventHandler<HTMLDivElement>
 }>;
 
 export type FormBuilderComponents = {

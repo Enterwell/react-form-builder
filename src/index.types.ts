@@ -2,9 +2,9 @@ export interface FormValidation {
     value?: any,
     error: boolean,
     errorMessages?: string[],
-    onChange: (value: any) => void,
-    onBlur: () => void,
-    validate: (value: any) => boolean | Promise<boolean>
+    onChange: (value: any, config?: FieldConfig) => void,
+    onBlur: (event: any, config?: FieldConfig) => void,
+    validate: (value: any, config?: FieldConfig) => boolean | Promise<boolean>
 }
 
 export interface FormField extends FormValidation {

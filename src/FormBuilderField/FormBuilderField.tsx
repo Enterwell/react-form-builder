@@ -33,8 +33,8 @@ export default function FormBuilderField(props: FormBuilderFieldsProps) {
             label={label}
             error={error}
             helperText={error && errorMessages ? errorMessages.join('. ') : undefined}
-            onChange={(e) => onChange && onChange(e)}
-            onBlur={() => onBlur && onBlur()}
+            onChange={(e, config) => onChange(e, config)}
+            onBlur={(config) => onBlur(config)}
             onKeyPress={(e) => { if (e.key === 'Enter' && formContext) formContext.submit(); }} />
     );
 }
