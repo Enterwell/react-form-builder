@@ -1,4 +1,5 @@
 import React from "react"
+import { FieldConfig } from "../index.types";
 
 type FunctionComponent<Props> = (props: Props) => JSX.Element;
 type ClassComponent<Props> = new (props: Props) => JSX.ElementClass;
@@ -11,8 +12,8 @@ export type FormBuilderComponent = Component<{
     label?: string,
     error?: boolean,
     helperText?: string,
-    onBlur?: () => void,
-    onChange?: (eventOrValue: EventTargetValue | any) => void,
+    onBlur?: (config?: FieldConfig) => void,
+    onChange?: (eventOrValue: EventTargetValue | any, config?: FieldConfig) => void,
     onKeyPress?: React.KeyboardEventHandler<HTMLDivElement>
 }>;
 

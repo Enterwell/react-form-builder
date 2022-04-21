@@ -1,12 +1,12 @@
 import { useValidation } from '@enterwell/react-form-validation';
-import { FormValidation } from '../index.types';
+import { FieldConfig, FormValidation } from '../index.types';
 
 const useFormField = (
     initialValue: any | undefined, 
     validationFn: (value: any) => Promise<boolean> | boolean, 
     type: string, 
     label?: string,
-    config?: object) => {
+    config?: FieldConfig) => {
     const validation = useValidation(initialValue, validationFn, config) as FormValidation;
 
     return {
