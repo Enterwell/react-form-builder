@@ -13,7 +13,7 @@ export interface FormField extends FormValidation {
 }
 
 export declare interface FieldConfig {
-    receiveEvent: boolean,
-    reversed: boolean,
-    ignoreDirtiness: boolean
+    receiveEvent?: boolean,
+    reversed?: boolean,
+    ignoreDirtiness?: boolean
 }
