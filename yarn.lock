@@ -3440,13 +3440,6 @@
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.2.tgz#ed4e0ad92306a704f9fb132a0cfcf77486dbe2bc"
   integrity sha512-HnYpAE1Y6kRyKM/XkEuiRQhTHvkzMBurTHnpFLYLBGPIylZNPs9jJcuOOYWxPLJCSEtmZT0Y8rHDokKN7rRTig==
 
-"@types/chalk@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@types/chalk/-/chalk-2.2.0.tgz#b7f6e446f4511029ee8e3f43075fb5b73fbaa0ba"
-  integrity sha512-1zzPV9FDe1I/WHhRkf9SNgqtRJWZqrBWgu7JGveuHmmyR9CnAPCie2N/x+iHrgnpYBIcCJWHBoMRv2TRWktsvw==
-  dependencies:
-    chalk "*"
-
 "@types/color-convert@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/color-convert/-/color-convert-2.0.0.tgz#8f5ee6b9e863dcbee5703f5a517ffb13d3ea4e22"
@@ -4949,11 +4942,6 @@ ccount@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ccount/-/ccount-1.1.0.tgz#246687debb6014735131be8abab2d93898f8d043"
   integrity sha512-vlNK021QdI7PNeiUh/lKkC/mNHHfV0m/Ad5JoI0TYtlBnJAslM/JIkm/tGC88bkLIwO6OQ5uV6ztS6kVAtCDlg==
-
-chalk@*:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.0.1.tgz#ca57d71e82bb534a296df63bbacc4a1c22b2a4b6"
-  integrity sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==
 
 chalk@^2.0.0, chalk@^2.4.1:
   version "2.4.2"
@@ -10298,10 +10286,10 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.13.2.tgz#01ad8802ca5b445b9c316b55e72645c13a3cd7e3"
   integrity sha512-CMtO2Uneg3SAz/d6fZ/6qbqqQHi2ynq6/KzMD/26gTkiEShCcpqFfTHgOxsE0egAq6SX3FmN4CeSqn8BzXQkJg==
 
-storycap@4.0.0-alpha.1:
-  version "4.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/storycap/-/storycap-4.0.0-alpha.1.tgz#d77897ceafada5fa42fc46a8d1f14aabfe783318"
-  integrity sha512-bKZR3uUWPaknlKIj/rtGnCwLBjJOadEx9fYUaveBK0r41Jm8oA/rKII3cMBEPEGVq+ir4QSWkmGDU6MwT/HZZQ==
+storycap@4.0.0-alpha.2:
+  version "4.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/storycap/-/storycap-4.0.0-alpha.2.tgz#f7462d3c283f569e823d8d17266c15de63762d5d"
+  integrity sha512-KmuIcBbHcqPpjkVb6IhfIcmW/68vg2HmVBPEpz1oh7w2Lv49QPQAZNjIHMRx019ON5ts8qUfB3KdyzE31VcRCw==
   dependencies:
     "@types/mkdirp" "^1.0.0"
     "@types/node" "^16.0.0"
@@ -10313,15 +10301,14 @@ storycap@4.0.0-alpha.1:
     puppeteer-core "^9.0.0"
     rimraf "^3.0.0"
     sanitize-filename "^1.6.3"
-    storycrawler "^4.0.0-alpha.1"
+    storycrawler "^4.0.0-alpha.2"
     yargs "^16.0.0"
 
-storycrawler@^4.0.0-alpha.1:
-  version "4.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/storycrawler/-/storycrawler-4.0.0-alpha.1.tgz#4953888fda7634d8983b4411537647be995a94e5"
-  integrity sha512-H2J39rvlF0opgXyFj6B607kI2A3fSsV+RxLdh2JT9Um99k0KXexAUI2Tg/hwhXK9mr7mnWdmXrDGRK7mZ32P1w==
+storycrawler@^4.0.0-alpha.2:
+  version "4.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/storycrawler/-/storycrawler-4.0.0-alpha.2.tgz#c9440b671b64b7d2c7f90adbca6562c7eaf93e3b"
+  integrity sha512-pZNJRR3lLLaXbR8UZjJ5vOlUn8BUtn9YjCK0IdkulwZvPcYQZ1Yl1shJW4Y8gpmE/tVZchK5/usvHF8gboLx3g==
   dependencies:
-    "@types/chalk" "^2.2.0"
     "@types/node" "^16.0.0"
     "@types/wait-on" "^5.0.0"
     chalk "^2.4.1"
