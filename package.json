@@ -1,6 +1,6 @@
 {
   "name": "@enterwell/react-form-builder",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Form builder functionality for React",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
