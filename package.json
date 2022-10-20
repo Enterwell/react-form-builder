@@ -39,7 +39,7 @@
     "react-dom": "^17 || ^18"
   },
   "devDependencies": {
-    "@babel/core": "7.18.13",
+    "@babel/core": "7.19.6",
     "@enterwell/react-form-validation": "1.2.7",
     "@rollup/plugin-commonjs": "22.0.2",
     "@rollup/plugin-node-resolve": "13.3.0",
