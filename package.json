@@ -1,6 +1,6 @@
 {
   "name": "@enterwell/react-form-builder",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Form builder functionality for React",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -22,7 +22,7 @@
     "stories-check": "rimraf ./.stories-pending && storycap --serverCmd \"start-storybook --ci -p 6007\" --serverTimeout 180000 -o .stories-pending http://localhost:6007 && kill-port 6007 && node -e \"require('./helpers/ci/StoriesCompare').run()\""
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "files": [
     "/lib"
