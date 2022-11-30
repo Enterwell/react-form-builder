@@ -100,7 +100,7 @@ Fields use `FormBuilderProvider` to select component based on field type and inj
 - error
 - helperText
 - onChange
-- onKeyPress
+- onKeyDown
 
 ### Advanced usage
 
