@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import FormBuilderField from "../FormBuilderField";
 import FormBuilderContext from "./FormBuilderContext";
 import { submitForm } from '@enterwell/react-form-validation';
@@ -14,8 +14,11 @@ export default function FormBuilder(props: FormBuilderProps) {
     } = props;
     const context = useContext(FormBuilderProviderContext);
 
-    const Wrapper = context.components.wrapper ?? React.Fragment;
-    const FieldWrapper = context.components.fieldWrapper ?? React.Fragment;
+    const Wrapper = useMemo(() => context.components.wrapper ?? React.Fragment, [context.components.wrapper]);
+    const FieldWrapper = useMemo(() => (
+        context.components.fieldWrapper ??
+        (({ children }: { children: JSX.Element | JSX.Element[] }) => <>{children}</>)
+    ), [context.components.fieldWrapper]);
 
     return (
         <FormBuilderContext.Provider value={{
@@ -27,7 +30,7 @@ export default function FormBuilder(props: FormBuilderProps) {
                     const field = form[fieldName];
                     if (field != null) {
                         return (
-                            <FieldWrapper key={fieldName}>
+                            <FieldWrapper key={fieldName} field={field}>
                                 <FormBuilderField field={field} />
                             </FieldWrapper>
                         );
