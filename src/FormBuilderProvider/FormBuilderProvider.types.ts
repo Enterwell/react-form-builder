@@ -1,5 +1,5 @@
 import React from "react"
-import { FieldConfig } from "../index.types";
+import { FieldConfig, FormField } from "../index.types";
 
 type FunctionComponent<Props> = (props: Props) => JSX.Element;
 type ClassComponent<Props> = new (props: Props) => JSX.ElementClass;
@@ -14,14 +14,14 @@ export type FormBuilderComponent = Component<{
     helperText?: string,
     onBlur: (e: any, config?: FieldConfig) => void,
     onChange: (eventOrValue: EventTargetValue | any, config?: FieldConfig) => void,
-    onKeyPress: React.KeyboardEventHandler<HTMLDivElement>
+    onKeyDown?: React.KeyboardEventHandler<HTMLDivElement> | React.KeyboardEventHandler<HTMLInputElement>
 }>;
 
 export type FormBuilderComponents = {
     [key: string]: FormBuilderComponent
 }  & {
     wrapper?: Component<any>,
-    fieldWrapper?: Component<any>
+    fieldWrapper?: Component<any & { field: FormField }>
 }
 
 export interface FormBuilderProviderProps {

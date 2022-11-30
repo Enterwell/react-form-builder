@@ -100,7 +100,7 @@ Fields use `FormBuilderProvider` to select component based on field type and inj
 - error
 - helperText
 - onChange
-- onKeyPress
+- onKeyDown
 
 ### Advanced usage
 
@@ -147,18 +147,3 @@ To builde production:
 yarn install
 yarn build
 ```
-
-### Running the example
-
-1. Build the library using `yarn build`
-2. Inside example/react-starter directory run:
-    - `yarn install`
-    - `yarn build`
-    - `yarn start`
-
-### Troubleshooting development
-
-#### Invalid hook call in example app
-
-- run `npm link` in `/examples/react-starter/node_modules/react`. This should make the React's global link
-- run `npm link react` in `/`. This should make the library use the application’s React copy
