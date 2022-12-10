@@ -9389,10 +9389,10 @@ rollup-plugin-typescript2@0.34.1:
     semver "^7.3.7"
     tslib "^2.4.0"
 
-rollup@3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.5.0.tgz#dfe5cba22c2c074691b4c25b9b8e9cfd90ac712b"
-  integrity sha512-TYu2L+TGhmNsXCtByont89u+ATQLcDy6A+++PwLXYunRtOm7XnaD+65s1pvewaOxMYR0eOkMXn9/i0saBxxpnQ==
+rollup@3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.7.2.tgz#221d3bb567ec622c5347e6adf689bef9d3715c3f"
+  integrity sha512-orqIX5zkHyHKVsIBl8J5a2tnVikOAMte0DgOLViyW6McYuj45FG+cQPrXILhaifBSmy0D0hKbHg2RbgzFJcwTg==
   optionalDependencies:
     fsevents "~2.3.2"
 
