@@ -121,8 +121,6 @@ export const Wrapper = () => {
     email: useFormField('', emailValidation, 'email', "E-mail")
   };
 
-  const error = form.email.error || form.name.error;
-
   return (
     <Container>
       <FormBuilderProvider components={{ ...components, ...wrapper }}>
