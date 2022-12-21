@@ -1,6 +1,6 @@
-import React from "react";
-import { FormBuilderComponents } from "./FormBuilderProvider.types";
+import { createContext } from "react";
+import type { FormBuilderComponents } from "./FormBuilderProvider.types";
 
-export const FormBuilderProviderContext = React.createContext<{ components: FormBuilderComponents }>({
+export const FormBuilderProviderContext = createContext<{ components: FormBuilderComponents }>({
     components: {}
 });

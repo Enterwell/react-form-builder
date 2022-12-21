@@ -1,12 +1,12 @@
-import React from "react";
-import { FormField } from "../index.types";
+import type { ReactNode } from "react";
+import type { FormField } from "../index.types";
 
-export interface FormBuilderProps {
-    children?: React.ReactNode;
+export type FormBuilderProps = {
+    children?: ReactNode;
     form: FormItems;
     onSubmit?: (formData: object) => void;
 }
 
-export interface FormItems {
+export type FormItems = {
     [key: string]: FormField | undefined;
 }

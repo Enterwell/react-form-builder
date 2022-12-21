@@ -1,9 +1,9 @@
-import React, { useContext, useMemo } from "react";
+import React, { Fragment, useContext, useMemo } from "react";
 import FormBuilderField from "../FormBuilderField";
 import FormBuilderContext from "./FormBuilderContext";
 import { submitForm } from '@enterwell/react-form-validation';
 import { FormBuilderProviderContext } from "../FormBuilderProvider/FormBuilderProviderContext";
-import { FormBuilderProps } from "./FormBuilder.types";
+import type { FormBuilderProps } from "./FormBuilder.types";
 import InvalidPlaceholder from "./InvalidPlaceholder";
 
 export default function FormBuilder(props: FormBuilderProps) {
@@ -14,7 +14,7 @@ export default function FormBuilder(props: FormBuilderProps) {
     } = props;
     const context = useContext(FormBuilderProviderContext);
 
-    const Wrapper = useMemo(() => context.components.wrapper ?? React.Fragment, [context.components.wrapper]);
+    const Wrapper = useMemo(() => context.components.wrapper ?? Fragment, [context.components.wrapper]);
     const FieldWrapper = useMemo(() => (
         context.components.fieldWrapper ??
         (({ children }: { children: JSX.Element | JSX.Element[] }) => <>{children}</>)

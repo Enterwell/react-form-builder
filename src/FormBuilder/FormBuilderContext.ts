@@ -1,7 +1,7 @@
-import React from "react";
-import { FormItems } from "./FormBuilder.types";
+import { createContext } from "react";
+import type { FormItems } from "./FormBuilder.types";
 
-const FormBuilderContext = React.createContext<{
+const FormBuilderContext = createContext<{
     submit: () => void,
     form: FormItems
 } | undefined>({submit: () => {}, form: {}});
