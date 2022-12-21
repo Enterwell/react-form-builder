@@ -26,7 +26,7 @@ export default [
             esbuild({
                 tsconfig: './tsconfig.build.json',
                 target: 'esnext',
-                minify: false,
+                minify: true,
                 jsx: 'automatic'
             }),
             summary({
