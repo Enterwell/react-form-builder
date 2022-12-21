@@ -1,8 +1,7 @@
 {
     "compilerOptions": {
-        "outDir": "lib/esm",
         "module": "esnext",
-        "target": "es5",
+        "target": "es6",
         "lib": [
             "es6",
             "dom",
@@ -11,6 +10,7 @@
         ],
         "jsx": "react",
         "declaration": true,
+        "declarationDir": "lib/",
         "moduleResolution": "node",
         "noUnusedLocals": true,
         "noUnusedParameters": true,
@@ -27,8 +27,6 @@
     ],
     "exclude": [
         "node_modules",
-        "lib",
-        "**/*.test.tsx",
-        "**/*.spec.tsx",
+        "lib"
     ]
 }
