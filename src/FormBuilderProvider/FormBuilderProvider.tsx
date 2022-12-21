@@ -1,16 +1,16 @@
 import React, { useContext, useMemo } from 'react';
-import { FormBuilderProviderProps } from './FormBuilderProvider.types';
+import type { FormBuilderProviderProps } from './FormBuilderProvider.types';
 import { FormBuilderProviderContext } from './FormBuilderProviderContext';
 
-export default function FormBuilderProvider(props: FormBuilderProviderProps) {
+export default function FormBuilderProvider({ components, children }: FormBuilderProviderProps) {
     const context = useContext(FormBuilderProviderContext);
     const combined = useMemo(
-        () => ({ components: { ...context?.components, ...props.components } }),
-        [context?.components, props.components]);
+        () => ({ components: { ...context?.components, ...components } }),
+        [context?.components, components]);
 
     return (
         <FormBuilderProviderContext.Provider value={combined}>
-            {props.children}
+            {children}
         </FormBuilderProviderContext.Provider>
     );
 }

@@ -1,15 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, type KeyboardEvent } from "react";
 import FormBuilderContext from "../FormBuilder/FormBuilderContext";
 import InvalidPlaceholder from "../FormBuilder/InvalidPlaceholder";
 import { FormBuilderProviderContext } from "../FormBuilderProvider/FormBuilderProviderContext";
-import { FormField } from "../index.types";
+import type { FormField } from "../index.types";
 
-export interface FormBuilderFieldsProps {
+export type FormBuilderFieldsProps = {
     field: FormField
-}
+};
 
-export default function FormBuilderField(props: FormBuilderFieldsProps) {
-    const { field } = props;
+export default function FormBuilderField({ field }: FormBuilderFieldsProps) {
     const {
         value,
         error,
@@ -24,17 +23,16 @@ export default function FormBuilderField(props: FormBuilderFieldsProps) {
     const formContext = useContext(FormBuilderContext);
     const Component = context.components[type];
 
-    if (!Component)
-        return <InvalidPlaceholder fieldName={`component type ${type}`} />
-
-    return (
-        <Component
-            value={value}
-            label={label}
-            error={error}
-            helperText={error && errorMessages ? errorMessages.join('. ') : undefined}
-            onChange={(e, config) => onChange(e, config)}
-            onBlur={(e, config) => onBlur(e, config)}
-            onKeyDown={(e: React.KeyboardEvent<HTMLDivElement> | React.KeyboardEvent<HTMLInputElement>) => { if (e.key === 'Enter' && formContext) formContext.submit(); }} />
-    );
+    return !Component
+        ? <InvalidPlaceholder fieldName={`component type ${type}`} />
+        : (
+            <Component
+                value={value}
+                label={label}
+                error={error}
+                helperText={error && errorMessages ? errorMessages.join('. ') : undefined}
+                onChange={(e, config) => onChange(e, config)}
+                onBlur={(e, config) => onBlur(e, config)}
+                onKeyDown={(e: KeyboardEvent<HTMLDivElement> | KeyboardEvent<HTMLInputElement>) => { if (e.key === 'Enter' && formContext) formContext.submit(); }} />
+        );
 }

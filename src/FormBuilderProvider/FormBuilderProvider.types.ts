@@ -1,4 +1,4 @@
-import React from "react"
+import type { KeyboardEventHandler, ReactNode } from "react"
 import { FieldConfig, FormField } from "../index.types";
 
 type FunctionComponent<Props> = (props: Props) => JSX.Element;
@@ -14,7 +14,7 @@ export type FormBuilderComponent = Component<{
     helperText?: string,
     onBlur: (e: any, config?: FieldConfig) => void,
     onChange: (eventOrValue: EventTargetValue | any, config?: FieldConfig) => void,
-    onKeyDown?: React.KeyboardEventHandler<HTMLDivElement> | React.KeyboardEventHandler<HTMLInputElement>
+    onKeyDown?: KeyboardEventHandler<HTMLDivElement> | KeyboardEventHandler<HTMLInputElement>
 }>;
 
 export type FormBuilderComponents = {
@@ -24,7 +24,7 @@ export type FormBuilderComponents = {
     fieldWrapper?: Component<any & { field: FormField }>
 }
 
-export interface FormBuilderProviderProps {
-    children?: React.ReactNode, 
+export type FormBuilderProviderProps = {
+    children?: ReactNode, 
     components: FormBuilderComponents
 }

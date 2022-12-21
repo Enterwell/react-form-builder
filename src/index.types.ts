@@ -1,4 +1,4 @@
-export interface FormValidation {
+export type FormValidation = {
     value?: any,
     error: boolean,
     errorMessages?: string[],
@@ -7,7 +7,7 @@ export interface FormValidation {
     validate: (value: any, config?: FieldConfig) => boolean | Promise<boolean>
 }
 
-export interface FormField extends FormValidation {
+export type FormField = FormValidation & {
     type: string,
     label?: string
 }
