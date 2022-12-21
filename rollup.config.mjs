@@ -3,6 +3,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import esbuild from 'rollup-plugin-esbuild'
+import summary from "rollup-plugin-summary";
 
 const packageJson = fs.readJsonSync("./package.json");
 
@@ -23,10 +24,13 @@ export default [
             }),
             commonjs(),
             esbuild({
-                tsconfig: './tsconfig.json',
+                tsconfig: './tsconfig.build.json',
                 target: 'esnext',
                 minify: false,
                 jsx: 'automatic'
+            }),
+            summary({
+                showGzippedSize: true
             })
         ]
     }
