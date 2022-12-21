@@ -10,6 +10,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@enterwell/react-form-builder)](https://www.npmjs.com/package/@enterwell/react-form-builder)
 [![Build and publish](https://github.com/Enterwell/react-form-builder/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/Enterwell/react-form-builder/actions/workflows/npm-publish.yml)
+[![Bundle size](https://badgen.net/bundlephobia/minzip/@enterwell/react-form-builder)](https://bundlephobia.com/package/@enterwell/react-form-builder)
 
 </div>
 
