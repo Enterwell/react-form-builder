@@ -10301,10 +10301,10 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.13.2.tgz#01ad8802ca5b445b9c316b55e72645c13a3cd7e3"
   integrity sha512-CMtO2Uneg3SAz/d6fZ/6qbqqQHi2ynq6/KzMD/26gTkiEShCcpqFfTHgOxsE0egAq6SX3FmN4CeSqn8BzXQkJg==
 
-storycap@4.0.0-alpha.2:
-  version "4.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/storycap/-/storycap-4.0.0-alpha.2.tgz#f7462d3c283f569e823d8d17266c15de63762d5d"
-  integrity sha512-KmuIcBbHcqPpjkVb6IhfIcmW/68vg2HmVBPEpz1oh7w2Lv49QPQAZNjIHMRx019ON5ts8qUfB3KdyzE31VcRCw==
+storycap@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/storycap/-/storycap-4.0.0.tgz#41ebb424ec1b9b89e9134a47cdb074b479c8cf8b"
+  integrity sha512-ergES3QfobqpofM5JEs0tWVOqqU782852YbAZemu78kq2KXdNTZP11cmqMA9p1j3+T47ZFd0IoTfYTaLPYisUQ==
   dependencies:
     "@types/mkdirp" "^1.0.0"
     "@types/node" "^16.0.0"
@@ -10316,13 +10316,13 @@ storycap@4.0.0-alpha.2:
     puppeteer-core "^9.0.0"
     rimraf "^3.0.0"
     sanitize-filename "^1.6.3"
-    storycrawler "^4.0.0-alpha.2"
+    storycrawler "^4.0.0"
     yargs "^16.0.0"
 
-storycrawler@^4.0.0-alpha.2:
-  version "4.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/storycrawler/-/storycrawler-4.0.0-alpha.2.tgz#c9440b671b64b7d2c7f90adbca6562c7eaf93e3b"
-  integrity sha512-pZNJRR3lLLaXbR8UZjJ5vOlUn8BUtn9YjCK0IdkulwZvPcYQZ1Yl1shJW4Y8gpmE/tVZchK5/usvHF8gboLx3g==
+storycrawler@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/storycrawler/-/storycrawler-4.0.0.tgz#6131e687231b0b0e34f188f64f89c4ae55dc9b9a"
+  integrity sha512-oxYe6X6rxGzxzfhDE4Fnq7a5Q+Og5OvSjUGOmFKRRCF4sKYJ9q5YrK/5qkj8XWHDb7dkQMuvJMSf565Ax8g80g==
   dependencies:
     "@types/node" "^16.0.0"
     "@types/wait-on" "^5.0.0"
