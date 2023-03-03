@@ -68,7 +68,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rimraf": "4.0.7",
-    "rollup": "3.17.2",
+    "rollup": "3.18.0",
     "rollup-plugin-esbuild": "^5.0.0",
     "rollup-plugin-peer-deps-external": "2.2.4",
     "rollup-plugin-summary": "^2.0.0",
