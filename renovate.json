@@ -44,5 +44,7 @@
   "baseBranches": [
     "stage"
   ],
-  "prHourlyLimit": 6
+  "prHourlyLimit": 6,
+  "platformAutomerge": true,
+  "platformCommit": true
 }
