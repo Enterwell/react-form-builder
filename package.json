@@ -41,10 +41,10 @@
     "react-dom": "^17 || ^18"
   },
   "devDependencies": {
-    "@babel/core": "7.21.3",
+    "@babel/core": "7.21.4",
     "@babel/plugin-proposal-decorators": "7.21.0",
     "@babel/plugin-proposal-export-default-from": "7.18.10",
-    "@babel/preset-typescript": "7.21.0",
+    "@babel/preset-typescript": "7.21.4",
     "@enterwell/react-form-validation": "1.2.8",
     "@rollup/plugin-commonjs": "24.0.1",
     "@rollup/plugin-node-resolve": "15.0.1",
