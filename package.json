@@ -61,7 +61,7 @@
     "babel-loader": "9.1.2",
     "concurrently": "7.6.0",
     "cross-env": "7.0.3",
-    "esbuild": "0.17.11",
+    "esbuild": "0.17.16",
     "fs-extra": "11.1.1",
     "kill-port": "2.0.1",
     "postcss": "8.4.21",
