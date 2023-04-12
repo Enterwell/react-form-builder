@@ -46,7 +46,7 @@
     "@babel/plugin-proposal-export-default-from": "7.18.10",
     "@babel/preset-typescript": "7.21.4",
     "@enterwell/react-form-validation": "1.2.8",
-    "@rollup/plugin-commonjs": "24.0.1",
+    "@rollup/plugin-commonjs": "24.1.0",
     "@rollup/plugin-node-resolve": "15.0.2",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-essentials": "6.5.16",
