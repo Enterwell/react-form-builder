@@ -1,5 +1,11 @@
 <h1 align="center">
-    @Enterwell</br>React Form Builder
+  <a style="display: inline-block;" href="https://enterwell.net" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="http://dev.enterwell.space/EW_logo_white.svg">
+      <img width="128" height="128" alt="logo" src="http://dev.enterwell.space/EW_logo_black.svg">
+    </picture>
+  </a>
+  <p>Enterwell React Form Builder</p>
 </h1>
 
 <p align="center">
@@ -30,7 +36,7 @@
 ### Installation
 
 ```bash
-yarn add @enterwell/react-form-builder
+pnpm add @enterwell/react-form-builder
 ```
 
 ### Usage
@@ -138,13 +144,13 @@ You can nest `FormBuilderProvider` inside other provider. The bottom provider wi
 For development:
 
 ```bash
-yarn install
-yarn dev
+pnpm install
+pnpm dev
 ```
 
 To builde production:
 
 ```bash
-yarn install
-yarn build
+pnpm install
+pnpm build
 ```
