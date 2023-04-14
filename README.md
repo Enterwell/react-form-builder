@@ -36,7 +36,7 @@
 ### Installation
 
 ```bash
-yarn add @enterwell/react-form-builder
+pnpm add @enterwell/react-form-builder
 ```
 
 ### Usage
@@ -144,13 +144,13 @@ You can nest `FormBuilderProvider` inside other provider. The bottom provider wi
 For development:
 
 ```bash
-yarn install
-yarn dev
+pnpm install
+pnpm dev
 ```
 
 To builde production:
 
 ```bash
-yarn install
-yarn build
+pnpm install
+pnpm build
 ```
