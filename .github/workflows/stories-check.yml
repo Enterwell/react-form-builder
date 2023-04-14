@@ -21,13 +21,13 @@ jobs:
           node-version: "16.x"
           cache: "yarn"
 
-      - name: Yarn install
-        run: yarn install --network-timeout 1000000
+      - name: PNPM install
+        run: pnpm i --frozen-lockfile
 
       - name: Run stories-check
         id: storiesCheck
         continue-on-error: true
-        run: yarn stories-check
+        run: pnpm stories-check
 
       - name: Commit story changes
         id: csc

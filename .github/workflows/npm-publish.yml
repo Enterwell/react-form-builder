@@ -23,9 +23,9 @@ jobs:
         uses: EndBug/add-and-commit@v9.1.1
         with:
           message: "[skip ci] [version-bump] Automated commit for version ${{ steps.version-bump.outputs.bumped-semantic-version }}"
-      - run: yarn install
-      - run: yarn build
-      - run: yarn publish --access public
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm build
+      - run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Git tags update
