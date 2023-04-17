@@ -4,6 +4,16 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - "*.stories.tsx"
+      - "*.stories.mdx"
+      - "*.js"
+      - "*.ts"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "rollup.config.mjs"
+      - "tsconfig.json"
+      - "tsconfig.build.json"
 
 jobs:
   checkScreenshots:
