@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 _NOTE: This is an automatically generated file. Do not modify contents of this file manually._
 
+## [0.3.1] - 2023-04-17
+### Fixed
+- Updated build npm packages
+
 ## [0.3.0] - 2023-04-14
 ### Added
 - ChangelogManager
