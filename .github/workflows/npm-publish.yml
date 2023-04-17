@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - "*.stories.tsx"
-      - "*.stories.mdx"
       - "*.js"
       - "*.ts"
       - "package.json"
