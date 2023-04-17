@@ -3,10 +3,48 @@
   "extends": [
     "config:base"
   ],
+  "packageRules": [
+    {
+      "automerge": true,
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "matchPackageNames": [
+        "@types/node",
+        "@types/react",
+        "fs-extra",
+        "rollup",
+        "typescript",
+        "esbuild",
+        "eslint",
+        "webpack",
+        "@babel/core",
+        "rimraf"
+      ]
+    },
+    {
+      "matchPackagePatterns": [
+          "*"
+      ],
+      "rangeStrategy": "pin"
+    },
+    {
+        "matchDepTypes": [
+            "engines",
+            "peerDependencies"
+        ],
+        "rangeStrategy": "auto"
+    }
+  ],
   "dependencyDashboard": true,
   "assigneesFromCodeOwners": true,
   "baseBranches": [
     "stage"
   ],
-  "prHourlyLimit": 6
+  "prHourlyLimit": 6,
+  "platformAutomerge": true,
+  "platformCommit": true
 }
