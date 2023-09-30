@@ -102,8 +102,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0(rollup@3.21.0)
   rollup-plugin-typescript2:
-    specifier: 0.34.1
-    version: 0.34.1(rollup@3.21.0)(typescript@5.0.4)
+    specifier: 0.36.0
+    version: 0.36.0(rollup@3.21.0)(typescript@5.0.4)
   storybook:
     specifier: 7.0.7
     version: 7.0.7
@@ -8141,8 +8141,8 @@ packages:
       terser: 5.16.9
     dev: true
 
-  /rollup-plugin-typescript2@0.34.1(rollup@3.21.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-P4cHLtGikESmqi1CA+tdMDUv8WbQV48mzPYt77TSTOPJpERyZ9TXdDgjSDix8Fkqce6soYz3+fa4lrC93IEkcw==}
+  /rollup-plugin-typescript2@0.36.0(rollup@3.21.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-NB2CSQDxSe9+Oe2ahZbf+B4bh7pHwjV5L+RSYpCu7Q5ROuN94F9b6ioWwKfz3ueL3KTtmX4o2MUH2cgHDIEUsw==}
     peerDependencies:
       rollup: '>=1.26.3'
       typescript: '>=2.4.0'
@@ -8151,8 +8151,8 @@ packages:
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
       rollup: 3.21.0
-      semver: 7.4.0
-      tslib: 2.5.0
+      semver: 7.5.4
+      tslib: 2.6.2
       typescript: 5.0.4
     dev: true
 
@@ -8246,6 +8246,14 @@ packages:
 
   /semver@7.4.0:
     resolution: {integrity: sha512-RgOxM8Mw+7Zus0+zcLEUn8+JfoLpj/huFTItQy2hsM4khuC1HYRDp0cU482Ewn/Fcy6bCjufD8vAj7voC66KQw==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+    dev: true
+
+  /semver@7.5.4:
+    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -8858,6 +8866,10 @@ packages:
 
   /tslib@2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
+    dev: true
+
+  /tslib@2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
   /type-check@0.3.2:
