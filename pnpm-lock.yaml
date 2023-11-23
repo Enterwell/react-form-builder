@@ -108,8 +108,8 @@ devDependencies:
     specifier: 7.0.7
     version: 7.0.7
   storycap:
-    specifier: 4.1.1
-    version: 4.1.1
+    specifier: 4.2.0
+    version: 4.2.0
   typescript:
     specifier: 5.3.2
     version: 5.3.2
@@ -8107,12 +8107,6 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /rxjs@7.8.0:
-    resolution: {integrity: sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==}
-    dependencies:
-      tslib: 2.5.0
-    dev: true
-
   /rxjs@7.8.1:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
@@ -8490,8 +8484,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /storycap@4.1.1:
-    resolution: {integrity: sha512-apHIlvAtViSlm2sIEPM7p1ZPWBNr7mY4jJg/D+s1pTmF76RR1XvJ/Saj2CWOrKu/zWmzTG3J/RuzapJ49qlflQ==}
+  /storycap@4.2.0:
+    resolution: {integrity: sha512-g+LHM0euk8zLGeSV2uIlCeBWtB9/a71tHPtBF1eKSAliUsc+JFmebM/JlHDDnEXIrfgeiLEO9Ki899Rb/qpC9w==}
     engines: {node: '>=14.13'}
     hasBin: true
     dependencies:
@@ -8505,7 +8499,7 @@ packages:
       puppeteer-core: 9.1.1
       rimraf: 5.0.5
       sanitize-filename: 1.6.3
-      storycrawler: 4.1.1
+      storycrawler: 4.2.0
       yargs: 16.2.0
     transitivePeerDependencies:
       - bufferutil
@@ -8515,8 +8509,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /storycrawler@4.1.1:
-    resolution: {integrity: sha512-ID1E3M/NlPqVH8zc6SF+Kg1xiMgfzMpRpBW3oFSEYaTFzm8rxUVMmFADORaZRCLKhdwUZoJATT70lQALcCLU5g==}
+  /storycrawler@4.2.0:
+    resolution: {integrity: sha512-81hfN92rfun1eWfXexV1Y/ZiTE2JERayxcJgI+r/QSVCxDrR0HKT4F1gPOkISFcKd7YxOJeoJ0cpZVjgpL3Row==}
     engines: {node: '>=14.13'}
     dependencies:
       '@types/node': 18.18.12
@@ -9088,7 +9082,7 @@ packages:
       joi: 17.9.1
       lodash: 4.17.21
       minimist: 1.2.8
-      rxjs: 7.8.0
+      rxjs: 7.8.1
     transitivePeerDependencies:
       - debug
     dev: true
