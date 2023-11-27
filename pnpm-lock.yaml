@@ -108,8 +108,8 @@ devDependencies:
     specifier: 7.0.7
     version: 7.0.7
   storycap:
-    specifier: 4.1.1
-    version: 4.1.1
+    specifier: 4.2.0
+    version: 4.2.0
   typescript:
     specifier: 5.3.2
     version: 5.3.2
@@ -8475,8 +8475,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /storycap@4.1.1:
-    resolution: {integrity: sha512-apHIlvAtViSlm2sIEPM7p1ZPWBNr7mY4jJg/D+s1pTmF76RR1XvJ/Saj2CWOrKu/zWmzTG3J/RuzapJ49qlflQ==}
+  /storycap@4.2.0:
+    resolution: {integrity: sha512-g+LHM0euk8zLGeSV2uIlCeBWtB9/a71tHPtBF1eKSAliUsc+JFmebM/JlHDDnEXIrfgeiLEO9Ki899Rb/qpC9w==}
     engines: {node: '>=14.13'}
     hasBin: true
     dependencies:
@@ -8490,7 +8490,7 @@ packages:
       puppeteer-core: 9.1.1
       rimraf: 5.0.5
       sanitize-filename: 1.6.3
-      storycrawler: 4.1.1
+      storycrawler: 4.2.0
       yargs: 16.2.0
     transitivePeerDependencies:
       - bufferutil
@@ -8500,8 +8500,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /storycrawler@4.1.1:
-    resolution: {integrity: sha512-ID1E3M/NlPqVH8zc6SF+Kg1xiMgfzMpRpBW3oFSEYaTFzm8rxUVMmFADORaZRCLKhdwUZoJATT70lQALcCLU5g==}
+  /storycrawler@4.2.0:
+    resolution: {integrity: sha512-81hfN92rfun1eWfXexV1Y/ZiTE2JERayxcJgI+r/QSVCxDrR0HKT4F1gPOkISFcKd7YxOJeoJ0cpZVjgpL3Row==}
     engines: {node: '>=14.13'}
     dependencies:
       '@types/node': 18.18.12
