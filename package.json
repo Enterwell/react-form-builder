@@ -76,7 +76,7 @@
     "rollup-plugin-typescript2": "0.36.0",
     "storybook": "7.5.3",
     "storycap": "4.2.0",
-    "typescript": "5.3.2",
+    "typescript": "5.3.3",
     "webpack": "5.89.0"
   }
 }
