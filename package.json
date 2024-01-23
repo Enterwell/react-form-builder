@@ -70,7 +70,7 @@
     "react-dom": "18.2.0",
     "rimraf": "5.0.5",
     "rollup": "4.9.5",
-    "rollup-plugin-esbuild": "6.1.0",
+    "rollup-plugin-esbuild": "6.1.1",
     "rollup-plugin-peer-deps-external": "2.2.4",
     "rollup-plugin-summary": "2.0.0",
     "rollup-plugin-typescript2": "0.36.0",
