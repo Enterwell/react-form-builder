@@ -77,6 +77,6 @@
     "storybook": "7.5.3",
     "storycap": "4.2.0",
     "typescript": "5.3.3",
-    "webpack": "5.89.0"
+    "webpack": "5.95.0"
   }
 }
